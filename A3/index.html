@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Course: SENG 513 -->
+<!-- Date: November 6, 2023 -->
+<!-- Assignment 3 (Part Two) -->
+<!-- Name: Youssef Abdelrhafour -->
+<!-- UCID: 30085837 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Linking an external Google font for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main heading for the game -->
+    <h1>Connect Four</h1>
+    
+    <!-- Instructions for how to play the game -->
+    <p class="instructions">Click on any column to drop your disc. First player to get 4 in a row wins!</p>
+
+    <!-- Scoreboard -->
+    <div id="scoreboard">
+        Player 1: <span id="player1-score">0</span> - Player 2: <span id="player2-score">0</span>
+    </div>
+
+    <!-- Power-ups section -->
+    <div id="powerups">
+        <!-- Button to activate double drop power-up -->
+        <button id="doubleDrop" onclick="activateDoubleDrop()">Double Drop</button>
+        <!-- Button to remove the last disc -->
+        <button id="removeLastDisc" onclick="removeLastDisc()">Remove Last Disc</button>
+    </div>
+
+    <!-- Main container for the game board and associated controls -->
+    <div class="game-container">
+        <!-- Game board represented as a table -->
+        <table id="board"></table>
+        <!-- Message to indicate the current player's turn or other game notifications -->
+        <p id="message">Player 1's turn.</p>
+        <!-- Button to reset the game and start afresh -->
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Youssef Abdelrhafour. All rights reserved.</p>
+    </footer>
+    
+    <!-- Linking the external JavaScript file to handle game logic -->
+    <script src="script.js"></script>
+</body>
+</html>

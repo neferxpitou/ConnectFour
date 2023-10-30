@@ -1,0 +1,139 @@
+/* Course: SENG 513 */
+/* Date: November 6, 2023 */
+/* Assignment 3 (Part Two) */
+/* Name: Youssef Abdelrhafour */
+/* UCID: 30085837 */
+
+/* Resetting default margin and setting height for body and html */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Global styling for body */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: 100vw;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background: #e9ebee; /* Light gray background */
+}
+
+/* Styling for the main heading */
+h1 {
+    color: darkblue;
+}
+
+/* Styling for the game instructions */
+.instructions {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Styling for the main game container */
+.game-container {
+    flex: 1 0 auto;
+    margin: 20px auto;
+    width: 80vw;
+    max-width: 600px; /* Maximum width to ensure it doesn't grow too wide */
+}
+
+/* Styles for the game board (table) */
+table {
+    margin: 0 auto;
+    border-collapse: collapse; /* Removes space between table cells */
+}
+
+/* Styles for individual table cells */
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50%; /* Makes cells circular */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    cursor: pointer; /* Changes cursor to hand when hovering */
+}
+
+/* Hover effect for table cells */
+td:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Styles for player 1's disc */
+.player1 {
+    background-color: red;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Styles for player 2's disc */
+.player2 {
+    background-color: blue;
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Styles for highlighted cells (winning combination) */
+.highlight {
+    border: 2px solid #000;
+}
+
+/* Styles for the game status message */
+#message {
+    margin-top: 20px;
+}
+
+/* Styling for the scoreboard and power-ups sections */
+#scoreboard, #powerups {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+/* Global styles for buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for buttons */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state styles for buttons */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for disabled buttons */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed; /* Changes cursor to indicate non-clickable state */
+}
+
+/* Footer styles */
+footer {
+    flex-shrink: 0;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #001F3F;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Removes margin for paragraphs inside footer */
+footer p {
+    margin: 0;
+}
