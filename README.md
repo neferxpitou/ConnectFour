@@ -1,8 +1,3 @@
-# SENG513-A3-2
-Assignment Three: Part Two
-
-Name: Youssef Abdelrhafour. UCID: 30085837.
-
 Title: Connect Four
 
 Target Platform: Both desktop and mobile
